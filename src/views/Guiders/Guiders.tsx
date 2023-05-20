@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import { ViewLayout } from '../components/ViewLayout';
-import { ContentContainer } from '../components/ContentContainer';
-import { GuidersForm } from '../components/GuidersForm';
-import { GuidersList } from '../components/GuidersList';
-import { Heading } from '../components/Heading';
+import { ViewLayout } from '../../components/ViewLayout';
+import { ContentContainer } from '../../components/ContentContainer';
+import { GuidersForm } from '../../components/GuidersForm';
+import { GuidersList } from '../../components/GuidersList';
+import { Heading } from '../../components/Heading';
 import { useParams } from 'react-router';
 
 export const Guiders: FC = () => {
