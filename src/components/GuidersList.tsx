@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import { Button, SecondButton } from '../components/Button';
-import ReactStars from 'react-rating-stars-component';
+import ReactStars from "react-rating-stars-component"
 
 
 const Container = styled.div`
