@@ -8,5 +8,5 @@ import { Place } from './views/Place/Place';
 export const router = createBrowserRouter([
   { path: '/', element: <Home />, errorElement: <NotFound /> },
   { path: '/place/:place/:locales', element: <Place /> },
-  { path: '/guides', element: <Guiders />, errorElement: <NotFound /> },
+  { path: '/guiders', element: <Guiders />, errorElement: <NotFound /> },
 ]);
