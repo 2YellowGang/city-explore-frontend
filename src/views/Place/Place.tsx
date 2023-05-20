@@ -1,8 +1,8 @@
-import { FC, useMemo } from 'react';
+import { FC, useCallback, useMemo } from 'react';
 import { ViewLayout } from '../../components/ViewLayout';
 import { Heading } from '../../components/Heading';
 import { Section } from '../../components/Section';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { _places } from '../../mockedData';
 import { slugName } from '../../utils/slugName';
 import {
@@ -16,10 +16,22 @@ import infoIcon from '../../assets/info-icon.svg';
 
 export const Place: FC = () => {
   const { place } = useParams<{ place: string; locales: string }>();
+  const navigate = useNavigate();
 
   const placeData = useMemo(
     () => _places.find((p) => slugName(p.name) === place),
     [place],
+  );
+
+  const handleGuidersNav = useCallback(
+    (objectName: string) => {
+      if (placeData) {
+        navigate(
+          `/guiders/${slugName(placeData.name)}/${slugName(objectName)}`,
+        );
+      }
+    },
+    [navigate, placeData],
   );
 
   const renderPlaces = useMemo(
@@ -32,13 +44,15 @@ export const Place: FC = () => {
           <div>
             <p>{obj.name}</p>
             <div>
-              <StyledThirdButton>Zobacz przewodników</StyledThirdButton>
+              <StyledThirdButton onClick={() => handleGuidersNav(obj.name)}>
+                Zobacz przewodników
+              </StyledThirdButton>
               <img src={infoIcon} />
             </div>
           </div>
         </PlaceItem>
       )),
-    [placeData?.objects],
+    [placeData?.objects, handleGuidersNav],
   );
 
   if (!placeData) {

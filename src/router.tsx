@@ -9,6 +9,6 @@ import { GuiderDetails } from './views/GuiderDetails/GuiderDetails';
 export const router = createBrowserRouter([
   { path: '/', element: <Home />, errorElement: <NotFound /> },
   { path: '/place/:place/:locales', element: <Place /> },
-  { path: '/guiders', element: <Guiders /> },
+  { path: '/guiders/:place/:object', element: <Guiders /> },
   { path: '/guider/:id', element: <GuiderDetails /> },
 ]);
