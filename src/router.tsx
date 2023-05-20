@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { Home } from './views/Home/Home';
 import { NotFound } from './views/NotFound/NotFound';
 import { Place } from './views/Place/Place';
+import { Guiders } from './views/Guiders/Guiders';
 import { Register } from './views/Register/Register';
 import { GuiderDetails } from './views/GuiderDetails/GuiderDetails';
 
