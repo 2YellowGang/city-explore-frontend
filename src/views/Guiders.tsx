@@ -6,15 +6,12 @@ import { GuidersList } from '../components/GuidersList';
 import { Heading } from '../components/Heading';
 
 export const Guiders: FC = () => {
-
-
   return (
     <ViewLayout>
       <ContentContainer>
         <Heading>Dostępni przewoźnicy:</Heading>
         <GuidersForm></GuidersForm>
         <GuidersList></GuidersList>
-
         <Heading>Dostępni w innym terminie:</Heading>
       </ContentContainer>
     </ViewLayout>

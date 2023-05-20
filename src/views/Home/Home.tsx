@@ -103,7 +103,6 @@ export const Home: FC = () => {
               options={languageOptions}
               placeholder={t('views.home.selectLanguage') ?? ''}
               isMulti
-              closeMenuOnSelect={false}
               required
               onChange={(newLanguages) =>
                 setLanguages(

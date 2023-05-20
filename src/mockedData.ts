@@ -1,4 +1,4 @@
-import { Language, Place } from './models';
+import { Guider, Language, Place } from './models';
 
 import sagradaFamilia from './assets/places/sagrada-familia.jpg';
 import parkGuell from './assets/places/park-guell.jpg';
@@ -20,6 +20,18 @@ import muzeumPowstania from './assets/places/muzeum-powstania-warszawskiego.jpg'
 import centrumNauki from './assets/places/centrum-nauki-kopernik.jpg';
 import stareMiasto from './assets/places/stare-miasto.jpg';
 import traktKrolewski from './assets/places/trakt-krolewski-i-kolumna-zygmunta.jpg';
+
+import avatar1 from './assets/avatars/1.jpeg';
+import avatar2 from './assets/avatars/2.jpeg';
+import avatar3 from './assets/avatars/3.jpeg';
+
+import englandFlag from './assets/flags/england.svg';
+import franceFlag from './assets/flags/france.svg';
+import polandFlag from './assets/flags/poland.svg';
+
+import relation1 from './assets/relations/1.jpg';
+import relation2 from './assets/relations/2.jpg';
+import relation3 from './assets/relations/3.jpg';
 
 export const _places: Place[] = [
   {
@@ -58,7 +70,88 @@ export const _places: Place[] = [
 ];
 
 export const _languages: Language[] = [
-  { name: 'polski', icon: '' },
-  { name: 'angielski', icon: '' },
-  { name: 'francuski', icon: '' },
+  { name: 'polski', icon: polandFlag },
+  { name: 'angielski', icon: englandFlag },
+  { name: 'francuski', icon: franceFlag },
+];
+
+export const _guiders: Guider[] = [
+  {
+    id: 1,
+    name: 'Adam',
+    surname: 'Niewiadomski',
+    age: 70,
+    avatar: avatar1,
+    country: 'Polska',
+    languages: [_languages[0], _languages[2]],
+    place: _places[2],
+    sex: 'M',
+    description:
+      'Jestem studentem z Paryża, znam miasto jak własną kieszeń. Chętnie pokażę Ci najlepsze kluby w mieście oraz najciekawsze miejsca gdzie przebywa młodzież.',
+    interests: ['kino', 'teatr', 'piłka nożna', 'ekonomia'],
+    skills: [
+      {
+        name: 'Znajomość miast',
+        up: 27,
+        down: 3,
+      },
+    ],
+    relations: [
+      { type: 'image', cover: relation1 },
+      { type: 'video', cover: relation2 },
+      { type: 'image', cover: relation3 },
+    ],
+  },
+  {
+    id: 1,
+    name: 'John',
+    surname: 'Clain',
+    age: 45,
+    avatar: avatar2,
+    country: 'USA',
+    languages: [_languages[1]],
+    place: _places[0],
+    sex: 'M',
+    description:
+      'Jestem studentem z Paryża, znam miasto jak własną kieszeń. Chętnie pokażę Ci najlepsze kluby w mieście oraz najciekawsze miejsca gdzie przebywa młodzież.',
+    interests: ['kino', 'teatr', 'piłka nożna', 'ekonomia'],
+    skills: [
+      {
+        name: 'Znajomość miast',
+        up: 27,
+        down: 3,
+      },
+    ],
+    relations: [
+      { type: 'image', cover: relation1 },
+      { type: 'video', cover: relation2 },
+      { type: 'image', cover: relation3 },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Greta',
+    surname: 'Martinez',
+    age: 18,
+    avatar: avatar3,
+    country: 'Hiszpania',
+    languages: [_languages[1], _languages[2]],
+    place: _places[1],
+    sex: 'K',
+    description:
+      'Jestem studentem z Paryża, znam miasto jak własną kieszeń. Chętnie pokażę Ci najlepsze kluby w mieście oraz najciekawsze miejsca gdzie przebywa młodzież.',
+    interests: ['kino', 'teatr', 'piłka nożna', 'ekonomia'],
+    skills: [
+      {
+        name: 'Znajomość miast',
+        up: 27,
+        down: 3,
+      },
+    ],
+    relations: [
+      { type: 'image', cover: relation1 },
+      { type: 'video', cover: relation2 },
+      { type: 'image', cover: relation3 },
+    ],
+  },
 ];
