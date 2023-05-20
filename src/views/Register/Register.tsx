@@ -10,7 +10,7 @@ export const Register: FC = () => {
     <ViewLayout>
       <ContentContainer>
         <Section>
-          <StyledHeading>Zostań przewodnikiem TrunOn!</StyledHeading>
+          <StyledHeading>Zostań przewodnikiem TourOn!</StyledHeading>
           <RegisterContainer>
             <RegisterForm />
           </RegisterContainer>
