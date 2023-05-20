@@ -6,15 +6,13 @@ import { RegisterContainer, StyledHeading } from './Register.styles';
 import { RegisterForm } from '../../components/RegisterForm';
 
 export const Register: FC = () => {
-
-
   return (
     <ViewLayout>
       <ContentContainer>
         <Section>
           <StyledHeading>Zostań przewodnikiem TrunOn!</StyledHeading>
           <RegisterContainer>
-            <RegisterForm></RegisterForm>
+            <RegisterForm />
           </RegisterContainer>
         </Section>
       </ContentContainer>

@@ -15,8 +15,8 @@ export const Guiders: FC = () => {
     <ViewLayout>
       <ContentContainer>
         <Heading>Dostępni przewoźnicy:</Heading>
-        <GuidersForm></GuidersForm>
-        <GuidersList></GuidersList>
+        <GuidersForm />
+        <GuidersList />
         <Heading>Dostępni w innym terminie:</Heading>
       </ContentContainer>
     </ViewLayout>
