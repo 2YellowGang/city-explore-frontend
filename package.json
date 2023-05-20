@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@types/react-date-range": "^1.4.4",
+    "@types/react-star-rating-component": "^1.4.1",
     "date-fns": "^2.30.0",
     "react": "^18.2.0",
     "react-date-range": "^1.4.0",
