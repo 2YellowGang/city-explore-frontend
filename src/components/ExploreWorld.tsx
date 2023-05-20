@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import worldMap from '../assets/world-map.svg';
+import { useTranslation } from 'react-i18next';
 
 const Container = styled.div`
   position: relative;
@@ -20,9 +21,13 @@ const Container = styled.div`
   }
 `;
 
-export const ExploreWorld: FC = () => (
-  <Container>
-    <h1>Zwiedź wielki świat</h1>
-    <p>z naszymi przewodnikami</p>
-  </Container>
-);
+export const ExploreWorld: FC = () => {
+  const { t } = useTranslation();
+
+  return (
+    <Container>
+      <h1>{t('exploreWorld.title')}</h1>
+      <p>{t('exploreWorld.subtitle')}</p>
+    </Container>
+  );
+};

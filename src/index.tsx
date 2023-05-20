@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 import { App } from './App.tsx';
 import { theme } from './theme.ts';
+import './i18n.ts';
 
 import './index.css';
 import 'react-date-range/dist/styles.css';

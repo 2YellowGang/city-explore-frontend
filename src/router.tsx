@@ -1,8 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import { Home } from './views/Home';
-import { NotFound } from './views/NotFound';
+import { Home } from './views/Home/Home';
+import { NotFound } from './views/NotFound/NotFound';
+import { Place } from './views/Place/Place';
 
 export const router = createBrowserRouter([
   { path: '/', element: <Home />, errorElement: <NotFound /> },
+  { path: '/place/:slug', element: <Place /> },
 ]);

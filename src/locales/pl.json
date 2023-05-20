@@ -1,0 +1,20 @@
+{
+  "common": {},
+  "exploreWorld": {
+    "title": "Zwiedź wielki świat",
+    "subtitle": "z naszymi przewodnikami"
+  },
+  "views": {
+    "home": {
+      "title": "Znajdź przewodnika",
+      "selectCity": "Wybierz miasto",
+      "selectLanguage": "Wybierz język",
+      "searchBtn": "Wyszukaj przewodników",
+      "becomeGuide": {
+        "title": "Zostań przewodnikiem",
+        "description": "Twórz niezapomniane podróże - Dołącz do nas jako przewodnik w aplikacji TourOn",
+        "registerBtn": "Zarejestruj się jako przewodnik"
+      }
+    }
+  }
+}
