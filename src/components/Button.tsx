@@ -11,3 +11,9 @@ export const Button = styled.button`
   font-size: 1rem;
   font-weight: bold;
 `;
+
+export const SecondButton = styled(Button)`
+  border: 1px solid ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.black};
+`;
