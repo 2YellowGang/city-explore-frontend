@@ -46,11 +46,13 @@ const Nav = styled.nav`
     font-weight: 500;
     font-size: 16px;
     padding: 0 20px;
+    margin-left: 25px;
   }
 `;
 
 const Logo = styled.img`
   height: 57px;
+  max-width: 100%;
   display: block;
 `;
 
@@ -72,13 +74,13 @@ export const ViewLayout: FC<PropsWithChildren> = ({ children }) => (
         </Link>
         <Nav>
           <Link to="/register">Zostań przewodnikiem</Link>
+          <Link to="#">Zaloguj się</Link>
         </Nav>
       </HeaderContainer>
     </Header>
     <MinHeightContainer>{children}</MinHeightContainer>
-
     <Footer>
-      <ContentContainer>&copy; Copyright 2022</ContentContainer>
+      <ContentContainer>&copy; Copyright 2023</ContentContainer>
     </Footer>
   </Container>
 );
