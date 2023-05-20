@@ -37,15 +37,30 @@ export const BenefitsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 40px 0 60px 0;
   justify-content: space-between;
-  margin: 40px 0 80px 0;
 `;
 
-export const BenefitsItem = styled.div`
-  width: 250px;
-  height: 160px;
-  border-radius: 30px;
-  background-color: #dddddd;
+export const BenefitItem = styled.div`
+  width: calc(25%);
+  max-width: 230px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 `;
 
-export const RegisterSection = styled(Section)``;
+export const BenefitItemImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+
+export const BenefitItemText = styled.p`
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+`;

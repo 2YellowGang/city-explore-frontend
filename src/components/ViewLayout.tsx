@@ -51,6 +51,7 @@ const Nav = styled.nav`
 
 const Logo = styled.img`
   height: 57px;
+  max-width: 100%;
   display: block;
 `;
 

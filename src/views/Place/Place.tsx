@@ -17,6 +17,20 @@ export const Place: FC = () => {
     [place],
   );
 
+  const renderPlaces = useMemo(
+    () =>
+      placeData?.objects?.map((obj) => (
+        <PlaceItem
+          key={obj.name}
+          style={{ backgroundImage: `url(${obj.image})` }}
+        >
+          <h1>{obj.name}</h1>
+          <Button>Zobacz przewodników</Button>
+        </PlaceItem>
+      )),
+    [placeData?.objects],
+  );
+
   if (!placeData) {
     return null;
   }
@@ -26,22 +40,13 @@ export const Place: FC = () => {
       <ContentContainer>
         <Section>
           <Heading>Polecane miejsca</Heading>
-          <PlaceContainer>
-            {placeData.objects.slice(0, 3).map((obj) => (
-              <PlaceItem
-                key={obj.name}
-                style={{ backgroundImage: `url(${obj.image})` }}
-              >
-                <h1>{obj.name}</h1>
-                <Button>Zobacz przewodników</Button>
-              </PlaceItem>
-            ))}
-          </PlaceContainer>
+          <PlaceContainer>{renderPlaces?.slice(0, 3)}</PlaceContainer>
         </Section>
         <Section>
           <Heading>
             Obiekty w mieście: <span>{placeData.name}</span>
           </Heading>
+          <PlaceContainer>{renderPlaces}</PlaceContainer>
         </Section>
       </ContentContainer>
     </ViewLayout>

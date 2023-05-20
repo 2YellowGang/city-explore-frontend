@@ -3,11 +3,12 @@ import { Range, RangeKeyDict } from 'react-date-range';
 import { ViewLayout } from '../../components/ViewLayout';
 import { ContentContainer } from '../../components/ContentContainer';
 import {
+  BenefitItem,
+  BenefitItemImage,
+  BenefitItemText,
   BenefitsContainer,
-  BenefitsItem,
   GuideSearchForm,
   GuideSearchSection,
-  RegisterSection,
   StyledButton,
   StyledRegisterButton,
   StyledSelect,
@@ -22,6 +23,12 @@ import { useTranslation } from 'react-i18next';
 import { Language, Place } from '../../models';
 import { slugName } from '../../utils/slugName';
 import { _languages, _places } from '../../mockedData';
+
+import clock from '../../assets/benefits/clock.svg';
+import heart from '../../assets/benefits/heart.svg';
+import money from '../../assets/benefits/money.svg';
+import people from '../../assets/benefits/people.svg';
+import { Section } from '../../components/Section';
 
 export const Home: FC = () => {
   const { t } = useTranslation();
@@ -114,19 +121,34 @@ export const Home: FC = () => {
           </GuideSearchForm>
           <Calendar ranges={selectionDateRanges} onChange={handleDateChange} />
         </GuideSearchSection>
-        <RegisterSection>
+        <Section>
           <Heading>{t('views.home.becomeGuide.title')}</Heading>
           <p>{t('views.home.becomeGuide.description')}</p>
           <BenefitsContainer>
-            <BenefitsItem></BenefitsItem>
-            <BenefitsItem></BenefitsItem>
-            <BenefitsItem></BenefitsItem>
-            <BenefitsItem></BenefitsItem>
+            <BenefitItem>
+              <BenefitItemImage src={money} />
+              <BenefitItemText>Dodatkowy zarobek</BenefitItemText>
+            </BenefitItem>
+            <BenefitItem>
+              <BenefitItemImage src={clock} />
+              <BenefitItemText>Elastyczne godziny pracy</BenefitItemText>
+            </BenefitItem>
+            <BenefitItem>
+              <BenefitItemImage src={people} />
+              <BenefitItemText>Poznawanie nowych osób</BenefitItemText>
+            </BenefitItem>
+            <BenefitItem>
+              <BenefitItemImage src={heart} />
+              <BenefitItemText>Praca z pasją</BenefitItemText>
+            </BenefitItem>
           </BenefitsContainer>
           <StyledRegisterButton as={Link} to="/register">
             {t('views.home.becomeGuide.registerBtn')}
           </StyledRegisterButton>
-        </RegisterSection>
+        </Section>
+        <Section>
+          <Heading>Referencje</Heading>
+        </Section>
       </ContentContainer>
     </ViewLayout>
   );
