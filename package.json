@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "release": "npm run build && gh-pages -d ./dist && release-it"
+    "release": "npm run build -- --base=/city-explore-frontend/ && gh-pages -d ./dist && release-it"
   },
   "dependencies": {
     "@types/react-date-range": "^1.4.4",
