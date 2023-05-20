@@ -9,7 +9,6 @@ import {
   GuideSearchSection,
   RegisterSection,
   StyledButton,
-  StyledInput,
   StyledRegisterButton,
   StyledSelect,
 } from './Home.styles';
@@ -75,14 +74,6 @@ export const Home: FC = () => {
         <GuideSearchSection>
           <GuideSearchForm onSubmit={handleSearchFormSubmit}>
             <h1>{t('views.home.title')}</h1>
-            <StyledInput
-              type="text"
-              placeholder={t('views.home.selectCity') ?? ''}
-            />
-            <StyledInput
-              type="text"
-              placeholder={t('views.home.selectLanguage') ?? ''}
-            />
             <StyledSelect
               options={placeOptions}
               value={placeOptions.find((p) => p.value === place?.name)}

@@ -1,5 +1,4 @@
 import { styled } from 'styled-components';
-import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 import { Section } from '../../components/Section';
 import { Select } from '../../components/Select';
@@ -18,11 +17,6 @@ export const GuideSearchForm = styled.form`
     text-transform: uppercase;
     font-weight: 800;
   }
-`;
-
-export const StyledInput = styled(Input)`
-  width: 75%;
-  margin-bottom: 20px;
 `;
 
 export const StyledSelect = styled(Select)`
