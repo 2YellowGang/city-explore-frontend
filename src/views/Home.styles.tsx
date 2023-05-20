@@ -1,8 +1,10 @@
-import { DateRangePicker } from 'react-date-range';
 import { styled } from 'styled-components';
+import { Input } from '../components/Input';
+import { Button } from '../components/Button';
 
 export const GuideSearchContainer = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const GuideSearchForm = styled.form`
@@ -15,8 +17,17 @@ export const GuideSearchForm = styled.form`
   }
 `;
 
-export const StyledDateRangePicker = styled(DateRangePicker)`
-  width: 50%;
+export const StyledInput = styled(Input)`
+  width: 75%;
+  margin-bottom: 20px;
+`;
+
+export const StyledButton = styled(Button)`
+  width: 75%;
+`;
+
+export const StyledRegisterButton = styled(Button)`
+  align-self: center;
 `;
 
 export const BenefitContainer = styled.div`
