@@ -7,7 +7,8 @@
     "start": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "npm run build && gh-pages -d ./dist && release-it"
   },
   "dependencies": {
     "@types/react-date-range": "^1.4.4",
@@ -18,12 +19,12 @@
     "react-date-range": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.3.1",
+    "react-rating-stars-component": "^2.2.0",
     "react-router-dom": "^6.11.2",
     "react-select": "^5.7.3",
-    "slugify": "^1.6.6",
-    "react-rating-stars-component": "^2.2.0",
     "react-slider": "^2.0.4",
     "react-two-thumb-input-range": "^1.0.7",
+    "slugify": "^1.6.6",
     "styled-components": "^6.0.0-rc.1"
   },
   "devDependencies": {
@@ -36,6 +37,8 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^5.0.0",
+    "release-it": "^15.10.3",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   }
