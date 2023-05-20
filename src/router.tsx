@@ -6,5 +6,5 @@ import { Place } from './views/Place/Place';
 
 export const router = createBrowserRouter([
   { path: '/', element: <Home />, errorElement: <NotFound /> },
-  { path: '/place/:slug', element: <Place /> },
+  { path: '/place/:place/:locales', element: <Place /> },
 ]);

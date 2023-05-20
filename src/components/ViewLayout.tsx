@@ -9,9 +9,7 @@ const Container = styled.main`
 `;
 
 const MinHeightContainer = styled.div`
-  &:empty {
-    min-height: 100vh;
-  }
+  min-height: calc(100vh - 155px);
 `;
 
 const Header = styled.header`

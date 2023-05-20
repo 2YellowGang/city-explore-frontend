@@ -4,12 +4,12 @@ export const _places: Place[] = [
   {
     name: 'Barcelona',
     objects: [
-      { name: 'SAGRADA FAMILIA', image: '' },
-      { name: 'PARK GÜELL', image: '' },
-      { name: 'Casa Batllo', image: '' },
-      { name: 'LA RAMBLA', image: '' },
-      { name: 'PARK CIUTADELLA', image: '' },
-      { name: 'CAMP NOU', image: '' },
+      { name: 'Sagrada Familia', image: '' },
+      { name: 'Park Güell', image: '' },
+      { name: 'Casa Bat§llo', image: '' },
+      { name: 'La Rambla', image: '' },
+      { name: 'Park Ciutadella', image: '' },
+      { name: 'Camp Nou', image: '' },
     ],
   },
   {

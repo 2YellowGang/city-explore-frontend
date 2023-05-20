@@ -62,8 +62,12 @@ export const Home: FC = () => {
   const handleSearchFormSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (place) {
-      navigate(`/place/${slugName(place.name)}`);
+    if (place && languages.length) {
+      navigate(
+        `/place/${slugName(place.name)}/${languages
+          .map((lang) => slugName(lang.name))
+          .join(',')}`,
+      );
     }
   };
 
@@ -78,11 +82,31 @@ export const Home: FC = () => {
               options={placeOptions}
               value={placeOptions.find((p) => p.value === place?.name)}
               placeholder={t('views.home.selectCity') ?? ''}
+              required
+              onChange={(newPlace) =>
+                setPlace(
+                  _places.find(
+                    (p) =>
+                      p.name === (newPlace as (typeof placeOptions)[0]).value,
+                  ),
+                )
+              }
             />
             <StyledSelect
               options={languageOptions}
               placeholder={t('views.home.selectLanguage') ?? ''}
               isMulti
+              closeMenuOnSelect={false}
+              required
+              onChange={(newLanguages) =>
+                setLanguages(
+                  _languages.filter((l) =>
+                    (newLanguages as typeof languageOptions)
+                      .map((l) => l.value)
+                      .includes(l.name),
+                  ),
+                )
+              }
             />
             <StyledButton type="submit">
               {t('views.home.searchBtn')}
