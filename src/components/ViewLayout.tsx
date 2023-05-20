@@ -8,6 +8,10 @@ const Container = styled.main`
   position: relative;
 `;
 
+const MinHeightContainer = styled.div`
+  min-height: calc(100vh - 155px);
+`;
+
 const Header = styled.header`
   background-color: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.white};
@@ -17,6 +21,32 @@ const Header = styled.header`
   display: flex;
   position: relative;
   z-index: 1;
+`;
+
+const HeaderContainer = styled(ContentContainer)`
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  a {
+    height: 44px;
+    display: block;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${(props) => props.theme.colors.black};
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 20px;
+  }
 `;
 
 const Logo = styled.img`
@@ -36,13 +66,17 @@ const Footer = styled.footer`
 export const ViewLayout: FC<PropsWithChildren> = ({ children }) => (
   <Container>
     <Header>
-      <ContentContainer>
+      <HeaderContainer>
         <Link to="/">
           <Logo src={logo} alt="Logo" />
         </Link>
-      </ContentContainer>
+        <Nav>
+          <Link to="/register">Zostań przewodnikiem</Link>
+        </Nav>
+      </HeaderContainer>
     </Header>
-    {children}
+    <MinHeightContainer>{children}</MinHeightContainer>
+
     <Footer>
       <ContentContainer>&copy; Copyright 2022</ContentContainer>
     </Footer>
