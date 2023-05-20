@@ -17,3 +17,9 @@ export const Button = styled.button`
   text-align: center;
   text-decoration: none;
 `;
+
+export const SecondButton = styled(Button)`
+  border: 1px solid ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.black};
+`;
