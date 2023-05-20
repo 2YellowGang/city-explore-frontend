@@ -64,3 +64,45 @@ export const BenefitItemText = styled.p`
   font-weight: 600;
   margin-top: 10px;
 `;
+
+export const ReferenceContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ReferenceItem = styled.div`
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.gray};
+  border-radius: 30px;
+  margin-bottom: 35px;
+  padding: 30px;
+
+  p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+`;
+
+export const ReferenceItemHeader = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 100%;
+      display: block;
+      margin-right: 20px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+`;
