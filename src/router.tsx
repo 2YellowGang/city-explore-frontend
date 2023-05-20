@@ -7,10 +7,15 @@ import { Guiders } from './views/Guiders/Guiders';
 import { Register } from './views/Register/Register';
 import { GuiderDetails } from './views/GuiderDetails/GuiderDetails';
 
-export const router = createBrowserRouter([
-  { path: '/', element: <Home />, errorElement: <NotFound /> },
-  { path: '/register', element: <Register /> },
-  { path: '/place/:place/:locales', element: <Place /> },
-  { path: '/guiders/:place/:object', element: <Guiders /> },
-  { path: '/guider/:id', element: <GuiderDetails /> },
-]);
+export const router = createBrowserRouter(
+  [
+    { path: '/', element: <Home />, errorElement: <NotFound /> },
+    { path: '/register', element: <Register /> },
+    { path: '/place/:place/:locales', element: <Place /> },
+    { path: '/guiders/:place/:object', element: <Guiders /> },
+    { path: '/guider/:id', element: <GuiderDetails /> },
+  ],
+  {
+    basename: import.meta.env.PROD ? '/city-explore-frontend/' : '/',
+  },
+);
