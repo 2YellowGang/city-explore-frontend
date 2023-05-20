@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && rimraf ./dist && vite build --base=/city-explore-frontend/",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "release": "npm run build -- --base=/city-explore-frontend/ && gh-pages -d ./dist && release-it"
+    "release": "npm run build && gh-pages -d ./dist && release-it"
   },
   "dependencies": {
     "@types/react-date-range": "^1.4.4",
@@ -39,6 +39,7 @@
     "eslint-plugin-react-refresh": "^0.3.4",
     "gh-pages": "^5.0.0",
     "release-it": "^15.10.3",
+    "rimraf": "^5.0.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   }
