@@ -9,6 +9,9 @@ import {
   GuiderButtonsContainer,
   GuiderInfoContainer,
   InfoColumn,
+  ReferenceContainer,
+  ReferenceItem,
+  ReferenceItemHeader,
   RelationItem,
   RelationsContainer,
   RelationsFlexContainer,
@@ -91,6 +94,29 @@ export const GuiderDetails: FC = () => {
                 </RelationItem>
               ))}
             </RelationsContainer>
+          </InfoColumn>
+        </RelationsFlexContainer>
+        <RelationsFlexContainer>
+          <InfoColumn style={{ width: '100%' }}>
+            <h3>Referencje</h3>
+            <ReferenceContainer>
+              <ReferenceItem>
+                <ReferenceItemHeader>
+                  <div>
+                    <img src="https://i.pravatar.cc/50?img=10" />
+                    <span>Kasia</span>
+                  </div>
+                  <img src={stars5} />
+                </ReferenceItemHeader>
+                <p>
+                  Najlepszy sposób na odkrywanie miasta! Dzięki aplikacji mogłem
+                  wybrać przewodnika, który idealnie pasował do moich
+                  zainteresowań. To było tak inspirujące i przyjemne
+                  doświadczenie. Na pewno skorzystam z tej aplikacji podczas
+                  kolejnych podróży!
+                </p>
+              </ReferenceItem>
+            </ReferenceContainer>
           </InfoColumn>
         </RelationsFlexContainer>
       </StyledContentContainer>
