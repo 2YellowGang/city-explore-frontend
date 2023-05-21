@@ -34,6 +34,10 @@ export const Place: FC = () => {
     [navigate, placeData],
   );
 
+  const handleDetailsNavigate = useCallback(() => {
+    navigate('/place-details');
+  }, [navigate]);
+
   const renderPlaces = useMemo(
     () =>
       placeData?.objects?.map((obj) => (
@@ -47,12 +51,12 @@ export const Place: FC = () => {
               <StyledThirdButton onClick={() => handleGuidersNav(obj.name)}>
                 Zobacz przewodników
               </StyledThirdButton>
-              <img src={infoIcon} />
+              <img src={infoIcon} onClick={handleDetailsNavigate} />
             </div>
           </div>
         </PlaceItem>
       )),
-    [placeData?.objects, handleGuidersNav],
+    [placeData?.objects, handleGuidersNav, handleDetailsNavigate],
   );
 
   if (!placeData) {

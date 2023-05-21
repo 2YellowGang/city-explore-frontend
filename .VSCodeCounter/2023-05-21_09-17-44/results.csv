@@ -1,0 +1,64 @@
+"filename", "language", "XML", "TypeScript", "TypeScript JSX", "PostCSS", "JSON", "JSON with Comments", "Markdown", "JavaScript", "HTML", "comment", "blank", "total"
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/.eslintrc.cjs", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 1, 15
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/.prettierrc.json", "JSON", 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 1, 5
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/.release-it.json", "JSON", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 1, 6
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 4
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 1, 20
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/package-lock.json", "JSON", 0, 0, 0, 0, 16354, 0, 0, 0, 0, 0, 1, 16355
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/package.json", "JSON", 0, 0, 0, 0, 46, 0, 0, 0, 0, 0, 1, 47
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/public/vite.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/App.tsx", "TypeScript JSX", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/benefits/clock.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/benefits/heart.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/benefits/money.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/benefits/people.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/down.svg", "XML", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/flags/england.svg", "XML", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/flags/france.svg", "XML", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/flags/poland.svg", "XML", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/info-icon.svg", "XML", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/logo.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/play-icon.svg", "XML", 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/stars5.svg", "XML", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/up.svg", "XML", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/world-map.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Button.tsx", "TypeScript JSX", 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 4, 33
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Calendar.tsx", "TypeScript JSX", 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 4, 41
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/ContentContainer.tsx", "TypeScript JSX", 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/ExploreWorld.tsx", "TypeScript JSX", 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 4, 34
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/GuidersForm.tsx", "TypeScript JSX", 0, 0, 61, 0, 0, 0, 0, 0, 0, 17, 8, 86
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Heading.tsx", "TypeScript JSX", 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Input.tsx", "TypeScript JSX", 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 2, 17
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/RegisterForm.tsx", "TypeScript JSX", 0, 0, 200, 0, 0, 0, 0, 0, 0, 0, 7, 207
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/ScrollToTop.tsx", "TypeScript JSX", 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 4, 13
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Section.tsx", "TypeScript JSX", 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 2, 9
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Select.tsx", "TypeScript JSX", 0, 0, 37, 0, 0, 0, 0, 0, 0, 2, 3, 42
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Slider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/ViewLayout.tsx", "TypeScript JSX", 0, 0, 82, 0, 0, 0, 0, 0, 0, 0, 9, 91
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/i18n.ts", "TypeScript", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 3, 18
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/index.css", "PostCSS", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 3, 25
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/index.tsx", "TypeScript JSX", 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 3, 19
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/locales/pl.json", "JSON", 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 1, 21
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/mockedData.ts", "TypeScript", 0, 148, 0, 0, 0, 0, 0, 0, 0, 0, 10, 158
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/models.ts", "TypeScript", 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 6, 42
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/router.tsx", "TypeScript JSX", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 3, 22
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/styled.d.ts", "TypeScript", 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/theme.ts", "TypeScript", 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/utils/slugName.ts", "TypeScript", 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/GuiderDetails/GuiderDetails.styles.tsx", "TypeScript JSX", 0, 0, 170, 0, 0, 0, 0, 0, 0, 0, 17, 187
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/GuiderDetails/GuiderDetails.tsx", "TypeScript JSX", 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 6, 126
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Guiders/Guiders.styles.tsx", "TypeScript JSX", 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 4, 71
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Guiders/Guiders.tsx", "TypeScript JSX", 0, 0, 92, 0, 0, 0, 0, 0, 0, 2, 8, 102
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Home/Home.styles.tsx", "TypeScript JSX", 0, 0, 96, 0, 0, 0, 0, 0, 0, 0, 13, 109
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Home/Home.tsx", "TypeScript JSX", 0, 0, 184, 0, 0, 0, 0, 0, 0, 0, 10, 194
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/NotFound/NotFound.styles.tsx", "TypeScript JSX", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/NotFound/NotFound.tsx", "TypeScript JSX", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Place/Place.styles.tsx", "TypeScript JSX", 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 5, 62
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Place/Place.tsx", "TypeScript JSX", 0, 0, 74, 0, 0, 0, 0, 0, 0, 0, 9, 83
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Register/Register.styles.tsx", "TypeScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 2, 10
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Register/Register.tsx", "TypeScript JSX", 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 2, 22
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/src/vite-env.d.ts", "TypeScript", 0, 2, 0, 0, 0, 0, 0, 0, 0, 1, 2, 5
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 20, 0, 0, 0, 2, 3, 25
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/tsconfig.node.json", "JSON", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 1, 11
+"/Users/cyntler/Development/__city-explore/city-explore-frontend/vite.config.ts", "TypeScript", 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"Total", "-", 93, 222, 1467, 22, 16439, 20, 2, 14, 19, 24, 193, 18515

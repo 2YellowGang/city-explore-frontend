@@ -1,0 +1,112 @@
+Date : 2023-05-21 09:17:44
+Directory : /Users/cyntler/Development/__city-explore/city-explore-frontend
+Total : 62 files,  18298 codes, 24 comments, 193 blanks, all 18515 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          6 |     16,439 |          0 |          6 |     16,445 |
+| TypeScript JSX     |         28 |      1,467 |         21 |        140 |      1,628 |
+| TypeScript         |          8 |        222 |          1 |         29 |        252 |
+| XML                |         15 |         93 |          0 |          8 |        101 |
+| PostCSS            |          1 |         22 |          0 |          3 |         25 |
+| JSON with Comments |          1 |         20 |          2 |          3 |         25 |
+| HTML               |          1 |         19 |          0 |          1 |         20 |
+| JavaScript         |          1 |         14 |          0 |          1 |         15 |
+| Markdown           |          1 |          2 |          0 |          2 |          4 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                             | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                |         62 |     18,298 |         24 |        193 |     18,515 |
+| . (Files)                                                                                                        |         10 |     16,479 |          2 |         14 |     16,495 |
+| public                                                                                                           |          1 |          1 |          0 |          0 |          1 |
+| src                                                                                                              |         51 |      1,818 |         22 |        179 |      2,019 |
+| src (Files)                                                                                                      |         10 |        276 |          1 |         36 |        313 |
+| src/assets                                                                                                       |         14 |         92 |          0 |          8 |        100 |
+| src/assets (Files)                                                                                               |          7 |         46 |          0 |          5 |         51 |
+| src/assets/benefits                                                                                              |          4 |          4 |          0 |          0 |          4 |
+| src/assets/flags                                                                                                 |          3 |         42 |          0 |          3 |         45 |
+| src/components                                                                                                   |         13 |        525 |         19 |         52 |        596 |
+| src/locales                                                                                                      |          1 |         20 |          0 |          1 |         21 |
+| src/utils                                                                                                        |          1 |          2 |          0 |          2 |          4 |
+| src/views                                                                                                        |         12 |        903 |          2 |         80 |        985 |
+| src/views/GuiderDetails                                                                                          |          2 |        290 |          0 |         23 |        313 |
+| src/views/Guiders                                                                                                |          2 |        159 |          2 |         12 |        173 |
+| src/views/Home                                                                                                   |          2 |        280 |          0 |         23 |        303 |
+| src/views/NotFound                                                                                               |          2 |         15 |          0 |          4 |         19 |
+| src/views/Place                                                                                                  |          2 |        131 |          0 |         14 |        145 |
+| src/views/Register                                                                                               |          2 |         28 |          0 |          4 |         32 |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                         | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/.eslintrc.cjs                                    | JavaScript         |         14 |          0 |          1 |         15 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/.prettierrc.json                                 | JSON               |          4 |          0 |          1 |          5 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/.release-it.json                                 | JSON               |          5 |          0 |          1 |          6 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/README.md                                        | Markdown           |          2 |          0 |          2 |          4 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/index.html                                       | HTML               |         19 |          0 |          1 |         20 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/package-lock.json                                | JSON               |     16,354 |          0 |          1 |     16,355 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/package.json                                     | JSON               |         46 |          0 |          1 |         47 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/public/vite.svg                                  | XML                |          1 |          0 |          0 |          1 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/App.tsx                                      | TypeScript JSX     |          4 |          0 |          2 |          6 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/benefits/clock.svg                    | XML                |          1 |          0 |          0 |          1 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/benefits/heart.svg                    | XML                |          1 |          0 |          0 |          1 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/benefits/money.svg                    | XML                |          1 |          0 |          0 |          1 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/benefits/people.svg                   | XML                |          1 |          0 |          0 |          1 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/down.svg                              | XML                |         11 |          0 |          1 |         12 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/flags/england.svg                     | XML                |         14 |          0 |          1 |         15 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/flags/france.svg                      | XML                |         14 |          0 |          1 |         15 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/flags/poland.svg                      | XML                |         14 |          0 |          1 |         15 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/info-icon.svg                         | XML                |         12 |          0 |          1 |         13 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/logo.svg                              | XML                |          1 |          0 |          0 |          1 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/play-icon.svg                         | XML                |          3 |          0 |          1 |          4 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/stars5.svg                            | XML                |          7 |          0 |          1 |          8 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/up.svg                                | XML                |         11 |          0 |          1 |         12 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/assets/world-map.svg                         | XML                |          1 |          0 |          0 |          1 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Button.tsx                        | TypeScript JSX     |         29 |          0 |          4 |         33 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Calendar.tsx                      | TypeScript JSX     |         37 |          0 |          4 |         41 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/ContentContainer.tsx              | TypeScript JSX     |          9 |          0 |          2 |         11 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/ExploreWorld.tsx                  | TypeScript JSX     |         30 |          0 |          4 |         34 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/GuidersForm.tsx                   | TypeScript JSX     |         61 |         17 |          8 |         86 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Heading.tsx                       | TypeScript JSX     |          9 |          0 |          2 |         11 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Input.tsx                         | TypeScript JSX     |         15 |          0 |          2 |         17 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/RegisterForm.tsx                  | TypeScript JSX     |        200 |          0 |          7 |        207 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/ScrollToTop.tsx                   | TypeScript JSX     |          9 |          0 |          4 |         13 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Section.tsx                       | TypeScript JSX     |          7 |          0 |          2 |          9 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Select.tsx                        | TypeScript JSX     |         37 |          2 |          3 |         42 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/Slider.tsx                        | TypeScript JSX     |          0 |          0 |          1 |          1 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/components/ViewLayout.tsx                    | TypeScript JSX     |         82 |          0 |          9 |         91 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/i18n.ts                                      | TypeScript         |         15 |          0 |          3 |         18 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/index.css                                    | PostCSS            |         22 |          0 |          3 |         25 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/index.tsx                                    | TypeScript JSX     |         16 |          0 |          3 |         19 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/locales/pl.json                              | JSON               |         20 |          0 |          1 |         21 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/mockedData.ts                                | TypeScript         |        148 |          0 |         10 |        158 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/models.ts                                    | TypeScript         |         36 |          0 |          6 |         42 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/router.tsx                                   | TypeScript JSX     |         19 |          0 |          3 |         22 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/styled.d.ts                                  | TypeScript         |          5 |          0 |          2 |          7 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/theme.ts                                     | TypeScript         |          9 |          0 |          2 |         11 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/utils/slugName.ts                            | TypeScript         |          2 |          0 |          2 |          4 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/GuiderDetails/GuiderDetails.styles.tsx | TypeScript JSX     |        170 |          0 |         17 |        187 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/GuiderDetails/GuiderDetails.tsx        | TypeScript JSX     |        120 |          0 |          6 |        126 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Guiders/Guiders.styles.tsx             | TypeScript JSX     |         67 |          0 |          4 |         71 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Guiders/Guiders.tsx                    | TypeScript JSX     |         92 |          2 |          8 |        102 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Home/Home.styles.tsx                   | TypeScript JSX     |         96 |          0 |         13 |        109 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Home/Home.tsx                          | TypeScript JSX     |        184 |          0 |         10 |        194 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/NotFound/NotFound.styles.tsx           | TypeScript JSX     |          4 |          0 |          2 |          6 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/NotFound/NotFound.tsx                  | TypeScript JSX     |         11 |          0 |          2 |         13 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Place/Place.styles.tsx                 | TypeScript JSX     |         57 |          0 |          5 |         62 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Place/Place.tsx                        | TypeScript JSX     |         74 |          0 |          9 |         83 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Register/Register.styles.tsx           | TypeScript JSX     |          8 |          0 |          2 |         10 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/views/Register/Register.tsx                  | TypeScript JSX     |         20 |          0 |          2 |         22 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/src/vite-env.d.ts                                | TypeScript         |          2 |          1 |          2 |          5 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/tsconfig.json                                    | JSON with Comments |         20 |          2 |          3 |         25 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/tsconfig.node.json                               | JSON               |         10 |          0 |          1 |         11 |
+| /Users/cyntler/Development/__city-explore/city-explore-frontend/vite.config.ts                                   | TypeScript         |          5 |          0 |          2 |          7 |
+| Total                                                                                                            |                    |     18,298 |         24 |        193 |     18,515 |
++------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
