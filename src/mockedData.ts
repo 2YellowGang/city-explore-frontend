@@ -83,38 +83,12 @@ export const _guiders: Guider[] = [
     age: 70,
     avatar: avatar1,
     country: 'Polska',
-    languages: [_languages[0], _languages[2]],
+    languages: [_languages[0]],
     place: _places[2],
     sex: 'M',
     description:
-      'Jestem studentem z Paryża, znam miasto jak własną kieszeń. Chętnie pokażę Ci najlepsze kluby w mieście oraz najciekawsze miejsca gdzie przebywa młodzież.',
-    interests: ['kino', 'teatr', 'piłka nożna', 'ekonomia'],
-    skills: [
-      {
-        name: 'Znajomość miast',
-        up: 27,
-        down: 3,
-      },
-    ],
-    relations: [
-      { type: 'image', cover: relation1 },
-      { type: 'video', cover: relation2 },
-      { type: 'image', cover: relation3 },
-    ],
-  },
-  {
-    id: 1,
-    name: 'John',
-    surname: 'Clain',
-    age: 45,
-    avatar: avatar2,
-    country: 'USA',
-    languages: [_languages[1]],
-    place: _places[0],
-    sex: 'M',
-    description:
-      'Jestem studentem z Paryża, znam miasto jak własną kieszeń. Chętnie pokażę Ci najlepsze kluby w mieście oraz najciekawsze miejsca gdzie przebywa młodzież.',
-    interests: ['kino', 'teatr', 'piłka nożna', 'ekonomia'],
+      'Witam! Jestem zafascynowany od dawien dawna historią. Mieszkam od kilkudziesięciu lat w Warszawie, a dzięki temu znam wszystkie najciekawsze historyczne miejsca! Zawsze z miłą chęcią dziele się moją wiedzą. Jeśli tylko napiszesz mi kilka rzeczy, które Cię interesują od razu będę wiedzieć gdzie Cię zabrać, więc jeśli Cię to interesuje napisz do mnie!',
+    interests: ['kino', 'teatr', 'piłka nożna', 'historia'],
     skills: [
       {
         name: 'Znajomość miast',
@@ -130,17 +104,43 @@ export const _guiders: Guider[] = [
   },
   {
     id: 2,
+    name: 'John',
+    surname: 'Clain',
+    age: 45,
+    avatar: avatar2,
+    country: 'USA',
+    languages: [_languages[1], _languages[0]],
+    place: _places[0],
+    sex: 'M',
+    description:
+      'Siemka, nazywam John od małego dziecka uwielbiałem sztukę – a w moim mieście jest jej naprawdę sporo do zobaczenia. Mógłbym Ci ją z chęcią pokazać, natomiast jeśli nie interesuje Cię to, a uwielbiasz piłkę nożną również się dobrze składa – gram w piłkę od dziecka, a historię lokalnych klubów znam doskonale! Napisz do mnie, na pewno się dogadamy!',
+    interests: ['kino', 'teatr', 'piłka nożna', 'historia'],
+    skills: [
+      {
+        name: 'Znajomość miast',
+        up: 27,
+        down: 3,
+      },
+    ],
+    relations: [
+      { type: 'image', cover: relation1 },
+      { type: 'video', cover: relation2 },
+      { type: 'image', cover: relation3 },
+    ],
+  },
+  {
+    id: 3,
     name: 'Greta',
     surname: 'Martinez',
     age: 18,
     avatar: avatar3,
-    country: 'Hiszpania',
-    languages: [_languages[1], _languages[2]],
+    country: 'Francja',
+    languages: [_languages[1], _languages[2], _languages[0]],
     place: _places[1],
     sex: 'K',
     description:
-      'Jestem studentem z Paryża, znam miasto jak własną kieszeń. Chętnie pokażę Ci najlepsze kluby w mieście oraz najciekawsze miejsca gdzie przebywa młodzież.',
-    interests: ['kino', 'teatr', 'piłka nożna', 'ekonomia'],
+      'Cześć, od dziecka mieszkam we Paryżu, ale świetnie mówię po Polsku, bo moja mama jest Polką. Z chęcią pokażę Ci tutejsze atrakcje, uwielbiam opowiadać o nich ludziom oraz doskonale wiem w jakich godzinach do nich się udać, aby nie były to godziny szczytu! Do zobaczenia! <3',
+    interests: ['kino', 'teatr', 'piłka nożna', 'historia'],
     skills: [
       {
         name: 'Znajomość miast',

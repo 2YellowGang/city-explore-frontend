@@ -15,46 +15,56 @@ export const GuidersItem = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  max-width: 30%;
-  h3, h5 {
-    color:  ${(props) => props.theme.colors.primary};
+  width: calc(33.33334% - (30px * 1 / 3) - 10px);
+  h3,
+  h5 {
+    color: ${(props) => props.theme.colors.primary};
     margin-bottom: 0;
   }
+
   h3 {
-    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 0;
   }
+
   .guider-container {
     /* max-width: 30%; */
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-    padding: 10px;
-    border: 1px solid #CDCDCD;
+    padding: 30px;
+    border: 1px solid #cdcdcd;
     border-radius: 20px;
   }
   .guider-profile {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+  }
+  .guider-profile > div {
+    margin-left: 20px;
   }
   .guider-profile > img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
   }
+  .guider-information {
+    flex: 1;
+  }
   .guider-information p {
     margin: 0;
   }
-  .guider-information, .guider-actions {
+  .guider-information,
+  .guider-actions {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
   }
   .guider-actions div {
     width: 100%;
     display: flex;
-    padding: 5px;
   }
-  .guider-actions div button{
-    margin: 0 4px;
+  .guider-actions div button {
+    margin: 5px;
   }
 `;

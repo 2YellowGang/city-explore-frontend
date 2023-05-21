@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ContentContainer } from './ContentContainer';
 import logo from '../assets/logo.svg';
+import { ScrollToTop } from './ScrollToTop';
 
 const Container = styled.main`
   position: relative;
@@ -66,21 +67,24 @@ const Footer = styled.footer`
 `;
 
 export const ViewLayout: FC<PropsWithChildren> = ({ children }) => (
-  <Container>
-    <Header>
-      <HeaderContainer>
-        <Link to="/">
-          <Logo src={logo} alt="Logo" />
-        </Link>
-        <Nav>
-          <Link to="/register">Zostań przewodnikiem</Link>
-          <Link to="#">Zaloguj się</Link>
-        </Nav>
-      </HeaderContainer>
-    </Header>
-    <MinHeightContainer>{children}</MinHeightContainer>
-    <Footer>
-      <ContentContainer>&copy; Copyright 2023</ContentContainer>
-    </Footer>
-  </Container>
+  <>
+    <ScrollToTop />
+    <Container>
+      <Header>
+        <HeaderContainer>
+          <Link to="/">
+            <Logo src={logo} alt="Logo" />
+          </Link>
+          <Nav>
+            <Link to="/register">Zostań przewodnikiem</Link>
+            <Link to="#">Zaloguj się</Link>
+          </Nav>
+        </HeaderContainer>
+      </Header>
+      <MinHeightContainer>{children}</MinHeightContainer>
+      <Footer>
+        <ContentContainer>&copy; Copyright 2023</ContentContainer>
+      </Footer>
+    </Container>
+  </>
 );

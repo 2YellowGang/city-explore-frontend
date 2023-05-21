@@ -9,6 +9,9 @@ import {
   BenefitsContainer,
   GuideSearchForm,
   GuideSearchSection,
+  ReferenceContainer,
+  ReferenceItem,
+  ReferenceItemHeader,
   StyledButton,
   StyledRegisterButton,
   StyledSelect,
@@ -23,12 +26,14 @@ import { useTranslation } from 'react-i18next';
 import { Language, Place } from '../../models';
 import { slugName } from '../../utils/slugName';
 import { _languages, _places } from '../../mockedData';
+import { Section } from '../../components/Section';
 
 import clock from '../../assets/benefits/clock.svg';
 import heart from '../../assets/benefits/heart.svg';
 import money from '../../assets/benefits/money.svg';
 import people from '../../assets/benefits/people.svg';
-import { Section } from '../../components/Section';
+
+import stars5 from '../../assets/stars5.svg';
 
 export const Home: FC = () => {
   const { t } = useTranslation();
@@ -147,6 +152,40 @@ export const Home: FC = () => {
         </Section>
         <Section>
           <Heading>Referencje</Heading>
+          <ReferenceContainer>
+            <ReferenceItem>
+              <ReferenceItemHeader>
+                <div>
+                  <img src="https://i.pravatar.cc/50?img=10" />
+                  <span>Kasia</span>
+                </div>
+                <img src={stars5} />
+              </ReferenceItemHeader>
+              <p>
+                Najlepszy sposób na odkrywanie miasta! Dzięki aplikacji mogłem
+                wybrać przewodnika, który idealnie pasował do moich
+                zainteresowań. To było tak inspirujące i przyjemne
+                doświadczenie. Na pewno skorzystam z tej aplikacji podczas
+                kolejnych podróży!
+              </p>
+            </ReferenceItem>
+            <ReferenceItem>
+              <ReferenceItemHeader>
+                <div>
+                  <img src="https://i.pravatar.cc/50?img=3" />
+                  <span>Michał</span>
+                </div>
+                <img src={stars5} />
+              </ReferenceItemHeader>
+              <p>
+                Nie wyobrażam sobie podróżowania bez tej aplikacji! Miałem
+                okazję poznać lokalnych przewodników, którzy byli pełni pasji i
+                miłości do swojego miasta. Dzięki nim odkryłem autentyczną
+                kulturę, smaki i historię. To było niezapomniane doświadczenie!"
+                - Michał
+              </p>
+            </ReferenceItem>
+          </ReferenceContainer>
         </Section>
       </ContentContainer>
     </ViewLayout>

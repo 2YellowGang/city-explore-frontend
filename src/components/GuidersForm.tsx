@@ -1,7 +1,6 @@
-import { FC } from 'react';
+import { FC, useMemo } from 'react';
 import styled from 'styled-components';
-import { TwoThumbInputRange } from "react-two-thumb-input-range"
-
+import { Select } from './Select';
 
 const Container = styled.div`
   display: flex;
@@ -18,7 +17,8 @@ const Container = styled.div`
     color: ${(props) => props.theme.colors.white};
     font-weight: bold;
   }
-  .filters-container, .sort-container {
+  .filters-container,
+  .sort-container {
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -32,35 +32,54 @@ const Container = styled.div`
   }
 `;
 
-const Select = styled.select`
-    background-color: white;
-    /* width: 200px; */
-    padding: 15px;
-    height: 50px;
-    border-radius: 30px;
-    border: 1px solid  ${(props) => props.theme.colors.primary};
-    color: black;
-    text-align: center;
-`;
+// const Select = styled.select`
+//     background-color: white;
+//     /* width: 200px; */
+//     padding: 15px;
+//     height: 50px;
+//     border-radius: 30px;
+//     border: 1px solid  ${(props) => props.theme.colors.primary};
+//     color: black;
+//     text-align: center;
+// `;
 
-export const GuidersForm: FC = () => (
-    
-  <Container>
-    <div className="filters-container">
+interface GuidersFormProps {
+  sex: string;
+  onSexChange: (sex: string) => void;
+}
+
+export const GuidersForm: FC<GuidersFormProps> = ({ sex, onSexChange }) => {
+  const sexOptions = useMemo(() => {
+    const sexes = [
+      { label: 'Kobieta', value: 'K' },
+      { label: 'Mężczyzna', value: 'M' },
+    ];
+
+    if (sex) {
+      return [{ label: 'Wszyscy', value: '' }, ...sexes];
+    }
+
+    return sexes;
+  }, [sex]);
+
+  return (
+    <Container>
+      <div className="filters-container">
         <h5>Filtrowanie</h5>
-        <Select>
-            <option selected>Wybierz płeć</option>
-            <option>Mężczyzna</option>
-            <option>Kobieta</option>
-        </Select>
-        <TwoThumbInputRange showLabels={true} onChange={() => {console.log()}} trackColor='#26900B' thumbColor='#26900B' values={[18,70]} min={18} max={70} />
-    </div>
-    <div className="sort-container">
+        <Select
+          options={sexOptions}
+          value={sexOptions.find((opt) => opt.value === sex)}
+          placeholder="Wybierz płeć"
+          onChange={(sex) => onSexChange((sex as (typeof sexOptions)[0]).value)}
+        />
+      </div>
+      {/* <div className="sort-container">
         <h5>Sortowanie</h5>
         <Select>
-            <option selected>Najwyższa ocena</option>
-            <option>Wiek</option>
+          <option selected>Najwyższa ocena</option>
+          <option>Wiek</option>
         </Select>
-    </div>  
-  </Container>
-);
+      </div> */}
+    </Container>
+  );
+};
