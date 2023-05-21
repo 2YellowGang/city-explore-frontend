@@ -1,3 +1,3 @@
-# city-explore-frontend
+# tour-on-frontend
 
-City Explore's front-end.
+TourOn's front-end application.
