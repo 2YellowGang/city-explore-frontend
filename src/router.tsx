@@ -18,6 +18,6 @@ export const router = createBrowserRouter(
     { path: '/place-details', element: <PlaceDetails /> },
   ],
   {
-    basename: import.meta.env.PROD ? '/city-explore-frontend/' : '/',
+    basename: import.meta.env.PROD ? '/tour-on-frontend/' : '/',
   },
 );

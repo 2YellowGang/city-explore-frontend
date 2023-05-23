@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "tsc && rimraf ./dist && vite build --base=/city-explore-frontend/",
+    "build": "tsc && rimraf ./dist && vite build --base=/tour-on-frontend/",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "release": "npm run build && gh-pages -d ./dist && release-it"
